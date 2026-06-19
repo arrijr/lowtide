@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wisp — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Wisp, a browser extension by Lowtide that suspends inactive tabs to free memory. Private by design — no data collected." />
+  <style>
+    :root { --blue: #4f7cf6; --ink: #18233a; --muted: #5b6678; --line: #e6ebf3; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: #f7f9fc; color: var(--ink);
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.62; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+    .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+    .tile { width: 40px; height: 40px; border-radius: 11px;
+      background: linear-gradient(135deg, #5b86f8, #3b63d4); color: #fff;
+      display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 22px; }
+    .brand b { font-size: 20px; }
+    h1 { font-size: 34px; line-height: 1.2; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 40px 0 10px; }
+    .meta { color: var(--muted); font-size: 15px; margin-bottom: 8px; }
+    p, li { color: #2c374a; }
+    a { color: var(--blue); }
+    ul { padding-left: 22px; }
+    li { margin: 8px 0; }
+    .lead { font-size: 18px; }
+    hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+    .foot { color: var(--muted); font-size: 14px; margin-top: 48px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><span class="tile">W</span><b>Wisp</b> <span class="meta">by Lowtide</span></div>
+
+    <h1>Wisp — Privacy Policy</h1>
+    <p class="meta">Last updated: 19 June 2026 · Publisher: Lowtide</p>
+    <p class="lead">Wisp is a browser extension that suspends inactive tabs to free up memory. It is private by design.</p>
+
+    <h2>The short version</h2>
+    <p>Wisp does <strong>not</strong> collect, store, transmit, or sell any personal data. Everything Wisp does happens locally in your browser. There are no accounts, no logins, no analytics, no trackers, and the extension makes no network requests of its own.</p>
+
+    <h2>What Wisp accesses — and why (all on your device)</h2>
+    <ul>
+      <li><strong>Your open tabs</strong> (title, URL, audible state): to decide which inactive tabs to put to sleep and to never sleep a tab you are using. This never leaves your device.</li>
+      <li><strong>Page content</strong>, via a content script on the sites you visit: only to detect whether a tab is playing media or has unsaved form input (so it is not slept), and to restore your scroll position and typed text when a slept tab wakes. Wisp does not read, store, or transmit the contents of your pages. <strong>Passwords are never captured.</strong></li>
+      <li><strong>Local storage</strong> (<code>chrome.storage</code>): to keep your settings and your never-sleep list on your device.</li>
+    </ul>
+
+    <h2>What Wisp does NOT do</h2>
+    <ul>
+      <li>No data collection, telemetry, or analytics.</li>
+      <li>No server or network communication initiated by the extension.</li>
+      <li>No accounts or sign-in.</li>
+      <li>No advertising, tracking, or fingerprinting.</li>
+      <li>No selling, sharing, or transferring of data (there is none to share).</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>Wisp requests <code>tabs</code>, <code>alarms</code>, <code>storage</code>, <code>contextMenus</code>, and host access to web pages solely to provide its single function — sleeping inactive tabs locally. None of these are used to gather data about you.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the “Last updated” date above will change. Material changes will be reflected in the extension's store listing.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about your privacy? Email <a href="mailto:lowtide.apps@gmail.com">lowtide.apps@gmail.com</a>.</p>
+
+    <hr />
+    <p class="foot">© 2026 Lowtide · <a href="./">lowtide</a></p>
+  </div>
+</body>
+</html>

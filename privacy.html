@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wisp — Privacy Policy</title>
-  <meta name="description" content="Privacy policy for Wisp, a browser extension by Lowtide that suspends inactive tabs to free memory. Private by design — no data collected." />
+  <title>Lowtide Extensions — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Wisp and Harbor, browser extensions by Lowtide. Private by design — no data collected, no network requests." />
   <style>
     :root { --blue: #4f7cf6; --ink: #18233a; --muted: #5b6678; --line: #e6ebf3; }
     * { box-sizing: border-box; }
@@ -33,14 +33,19 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="brand"><span class="tile">W</span><b>Wisp</b> <span class="meta">by Lowtide</span></div>
+    <div class=”brand”><span class=”tile”>L</span><b>Lowtide</b> <span class=”meta”>Privacy Policy</span></div>
 
-    <h1>Wisp — Privacy Policy</h1>
-    <p class="meta">Last updated: 19 June 2026 · Publisher: Lowtide</p>
-    <p class="lead">Wisp is a browser extension that suspends inactive tabs to free up memory. It is private by design.</p>
+    <h1>Lowtide Extensions — Privacy Policy</h1>
+    <p class=”meta”>Last updated: 27 June 2026 · Publisher: Lowtide</p>
+    <p class=”lead”>Lowtide builds calm, private browser tools. Every Lowtide extension is private by design: no data is collected, no network requests are made, and everything stays on your device.</p>
 
-    <h2>The short version</h2>
-    <p>Wisp does <strong>not</strong> collect, store, transmit, or sell any personal data. Everything Wisp does happens locally in your browser. There are no accounts, no logins, no analytics, no trackers, and the extension makes no network requests of its own.</p>
+    <h2>General principle (applies to all Lowtide extensions)</h2>
+    <p>Lowtide extensions do <strong>not</strong> collect, store, transmit, or sell any personal data. There are no accounts, no logins, no analytics, no trackers, and no network requests initiated by any Lowtide extension.</p>
+
+    <hr />
+
+    <h2>Wisp</h2>
+    <p>Wisp is a browser extension that suspends inactive tabs to free up memory.</p>
 
     <h2>What Wisp accesses — and why (all on your device)</h2>
     <ul>
@@ -58,17 +63,46 @@
       <li>No selling, sharing, or transferring of data (there is none to share).</li>
     </ul>
 
-    <h2>Permissions</h2>
+    <h2>Wisp permissions</h2>
     <p>Wisp requests <code>tabs</code>, <code>alarms</code>, <code>storage</code>, <code>contextMenus</code>, and host access to web pages solely to provide its single function — sleeping inactive tabs locally. None of these are used to gather data about you.</p>
 
-    <h2>Changes</h2>
-    <p>If this policy changes, the “Last updated” date above will change. Material changes will be reflected in the extension's store listing.</p>
+    <hr />
 
-    <h2>Contact</h2>
-    <p>Questions about your privacy? Email <a href="mailto:lowtide.apps@gmail.com">lowtide.apps@gmail.com</a>.</p>
+    <h2 id="harbor">Harbor</h2>
+    <p>Harbor is a browser extension that saves and restores tab sessions. It keeps a full history of your sessions and lets you back them up to files on your device.</p>
+
+    <h2>What Harbor accesses — and why (all on your device)</h2>
+    <ul>
+      <li><strong>Your open tabs and tab groups</strong> (title, URL, group name/color): to save and restore your sessions. This data never leaves your device.</li>
+      <li><strong>Local storage</strong> (<code>chrome.storage</code> + <code>IndexedDB</code>): to keep your session history, collections, and settings on your device. Nothing is synced to any server.</li>
+      <li><strong>Downloads</strong>: solely to let you export a backup file (JSON) of your sessions to your own Downloads folder. Harbor never uploads files anywhere — the download is a one-way write to your local disk.</li>
+      <li><strong>Side panel</strong>: to display the Harbor UI in the browser side panel. No data flows out through this.</li>
+      <li><strong>Alarms</strong>: to schedule periodic auto-backups of your sessions to your local Downloads folder.</li>
+    </ul>
+
+    <h2>What Harbor does NOT do</h2>
+    <ul>
+      <li>No data collection, telemetry, or analytics.</li>
+      <li>No server or network communication of any kind — Harbor makes zero outbound requests.</li>
+      <li>No accounts or sign-in.</li>
+      <li>No advertising, tracking, or fingerprinting.</li>
+      <li>No selling, sharing, or transferring of data (there is none to share).</li>
+      <li>Backup files are written only to your own device's Downloads folder; they are never uploaded anywhere.</li>
+    </ul>
+
+    <h2>Harbor permissions</h2>
+    <p>Harbor requests <code>tabs</code>, <code>tabGroups</code>, <code>storage</code>, <code>unlimitedStorage</code>, <code>alarms</code>, <code>downloads</code>, and <code>sidePanel</code>. All are used solely to save, display, and back up your sessions locally on your device. None are used to gather or transmit data about you.</p>
 
     <hr />
-    <p class="foot">© 2026 Lowtide · <a href="./">lowtide</a></p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the “Last updated” date above will change. Material changes will be reflected in each extension's store listing.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about your privacy? Email <a href=”mailto:lowtide.apps@gmail.com”>lowtide.apps@gmail.com</a>.</p>
+
+    <hr />
+    <p class=”foot”>© 2026 Lowtide · <a href=”./”>lowtide</a></p>
   </div>
 </body>
 </html>
